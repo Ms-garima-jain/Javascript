@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 4. Find the difference in age between the oldest and youngest family members, and return their respective ages and the age difference.
+//   input:-
+   const input = [
+  {
+    name: "John",
+    age: 13,
+  },
+  {
+    name: "Mark",
+    age: 56,
+  },
+  {
+    name: "Rachel",
+    age: 45,
+  },
+  {
+    name: "Nate",
+    age: 67,
+  },
+  {
+    name: "Jennifer",
+    age: 65,
+  },
+];
+
+ let minage =input[0].age;
+ let maxage= input[0].age;
+  for ( const member of input)
+  {
+     if ( member.age<minage)
+     {
+        minage= member.age
+     }
+     if ( member.age>maxage)
+     {
+maxage=member.age;
+     }
+  }
+  let difference = maxage-minage;
+   const output =[minage, maxage, difference];
+    document.write ( output);
+    </script>
+
+</body>
+</html>
