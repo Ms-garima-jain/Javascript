@@ -1,0 +1,7 @@
+const users = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 25 },
+  { name: "Jim", age: 35 }
+];
+const updateduser= users.map(user=>({...user, age : user.age+2}));
+console.log (updateduser)
