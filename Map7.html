@@ -1,0 +1,11 @@
+const users = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 15 },
+  { name: "Jim", age: 20 }
+];
+const updatedUsers=users.map(user=> ({
+    name: user.name,
+    age : user.age,
+    isadult: user.age>18
+}))
+ console.log (updatedUsers)
